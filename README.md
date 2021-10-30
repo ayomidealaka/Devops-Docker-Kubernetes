@@ -49,6 +49,7 @@ The project's goal is to operationalize a pre-trained, `sklearn` model that has 
   in a separate terminal. Check output in first terminal.
 
 ## Summary of Repository files
+All files can be found in the [project-ml-microservice-kubernetes](https://github.com/ayomidealaka/Devops-Docker-Kubernetes/tree/main/project-ml-microservice-kubernetes) folder except the [circleci](https://github.com/ayomidealaka/Devops-Docker-Kubernetes/tree/main/.circleci) folder.
 
 - **requirements.txt** - This text file has a list of package dependencies for `app.py`
 - **Makefile** - This file contains the setup, install, test and lint instructions for the virtual environment
