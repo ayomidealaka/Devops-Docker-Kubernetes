@@ -60,7 +60,7 @@ All files can be found in the [project-ml-microservice-kubernetes](https://githu
   - `docker run -p 8000:80` exposes the app at port 8000
 - **upload_docker.sh** - This script uploads docker image to DockerHub by authenticating DockerHub credentials.
 - **run_kubernetes.sh** - This script runs the docker image in a Kubernetes cluster.
-  - kubectl create deployment command creates deployment wotj name demopredict-app
+  - `kubectl create deployment` command creates deployment.
   - `kubectl get pods` can be used to checks the state of all available pods.
   - `kubectl port-forward project-ml-microservice-kubernetes 8000:80` allows all application requests to be handled at port 8000.
 - Use `./make_prediction.sh` to send input data to docker image in kubernetes pod and receive house pricing predictions.
