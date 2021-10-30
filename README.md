@@ -49,6 +49,7 @@ The project's goal is to operationalize a pre-trained, `sklearn` model that has 
   in a separate terminal. Check output in first terminal.
 
 ## Summary of Repository files
+All files can be found in the [project-ml-microservice-kubernetes](https://github.com/ayomidealaka/Devops-Docker-Kubernetes/tree/main/project-ml-microservice-kubernetes) folder except the [circleci](https://github.com/ayomidealaka/Devops-Docker-Kubernetes/tree/main/.circleci) folder.
 
 - **requirements.txt** - This text file has a list of package dependencies for `app.py`
 - **Makefile** - This file contains the setup, install, test and lint instructions for the virtual environment
@@ -59,7 +60,7 @@ The project's goal is to operationalize a pre-trained, `sklearn` model that has 
   - `docker run -p 8000:80` exposes the app at port 8000
 - **upload_docker.sh** - This script uploads docker image to DockerHub by authenticating DockerHub credentials.
 - **run_kubernetes.sh** - This script runs the docker image in a Kubernetes cluster.
-  - kubectl create deployment command creates deployment wotj name demopredict-app
+  - `kubectl create deployment` command creates deployment.
   - `kubectl get pods` can be used to checks the state of all available pods.
   - `kubectl port-forward project-ml-microservice-kubernetes 8000:80` allows all application requests to be handled at port 8000.
 - Use `./make_prediction.sh` to send input data to docker image in kubernetes pod and receive house pricing predictions.
